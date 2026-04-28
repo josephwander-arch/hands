@@ -125,7 +125,7 @@ dependencies = [
 [[package]]
 name = "browser-mcp"
 version = "0.1.1"
-source = "git+https://github.com/josephwander-arch/browser-mcp?tag=v0.1.1#37c34c24f894243f80425423e6e9eae482080a14"
+source = "git+https://github.com/AIWander/browser-mcp?tag=v0.1.1#37c34c24f894243f80425423e6e9eae482080a14"
 dependencies = [
  "base64 0.21.7",
  "chromiumoxide",
@@ -136,7 +136,7 @@ dependencies = [
  "serde",
  "serde_json",
  "tokio",
- "vision-core",
+ "vision-core 0.1.0 (git+https://github.com/josephwander-arch/vision-core?tag=v0.1.0)",
 ]
 
 [[package]]
@@ -337,7 +337,7 @@ dependencies = [
 [[package]]
 name = "cpc-paths"
 version = "0.1.0"
-source = "git+https://github.com/josephwander-arch/cpc-paths?tag=v0.1.0#d78eea9a89a46b2d01aa471f64e13ccd61b126e6"
+source = "git+https://github.com/AIWander/cpc-paths?tag=v0.1.0#d78eea9a89a46b2d01aa471f64e13ccd61b126e6"
 dependencies = [
  "anyhow",
  "chrono",
@@ -972,7 +972,7 @@ dependencies = [
  "tracing",
  "tracing-subscriber",
  "uia-mcp",
- "vision-core",
+ "vision-core 0.1.0 (git+https://github.com/AIWander/vision-core?tag=v0.1.0)",
  "windows 0.58.0",
 ]
 
@@ -2226,9 +2226,9 @@ dependencies = [
 
 [[package]]
 name = "rustls-webpki"
-version = "0.103.12"
+version = "0.103.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8279bb85272c9f10811ae6a6c547ff594d6a7f3c6c6b02ee9726d1d0dcfcdd06"
+checksum = "61c429a8649f110dddef65e2a5ad240f747e85f7758a6bccc7e5777bd33f756e"
 dependencies = [
  "ring",
  "rustls-pki-types",
@@ -2965,7 +2965,7 @@ checksum = "562d481066bde0658276a35467c4af00bdc6ee726305698a55b86e61d7ad82bb"
 [[package]]
 name = "uia-mcp"
 version = "1.0.0"
-source = "git+https://github.com/josephwander-arch/uia-mcp?tag=v1.0.0#9662d9e74eecf4b3431ca81c91ff565960d6687e"
+source = "git+https://github.com/AIWander/uia-mcp?tag=v1.0.0#9662d9e74eecf4b3431ca81c91ff565960d6687e"
 dependencies = [
  "serde",
  "serde_json",
@@ -3037,6 +3037,22 @@ name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
+
+[[package]]
+name = "vision-core"
+version = "0.1.0"
+source = "git+https://github.com/AIWander/vision-core?tag=v0.1.0#a6e2547199ec8cbbd8b92632198a509daf595b0e"
+dependencies = [
+ "base64 0.22.1",
+ "chrono",
+ "image",
+ "reqwest 0.12.28",
+ "screenshots",
+ "serde",
+ "serde_json",
+ "tokio",
+ "windows 0.58.0",
+]
 
 [[package]]
 name = "vision-core"
