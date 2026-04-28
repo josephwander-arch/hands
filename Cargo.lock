@@ -125,7 +125,7 @@ dependencies = [
 [[package]]
 name = "browser-mcp"
 version = "0.1.1"
-source = "git+https://github.com/josephwander-arch/browser-mcp?tag=v0.1.1#37c34c24f894243f80425423e6e9eae482080a14"
+source = "git+https://github.com/AIWander/browser-mcp?tag=v0.1.1#37c34c24f894243f80425423e6e9eae482080a14"
 dependencies = [
  "base64 0.21.7",
  "chromiumoxide",
@@ -136,7 +136,7 @@ dependencies = [
  "serde",
  "serde_json",
  "tokio",
- "vision-core",
+ "vision-core 0.1.0 (git+https://github.com/josephwander-arch/vision-core?tag=v0.1.0)",
 ]
 
 [[package]]
@@ -337,7 +337,7 @@ dependencies = [
 [[package]]
 name = "cpc-paths"
 version = "0.1.0"
-source = "git+https://github.com/josephwander-arch/cpc-paths?tag=v0.1.0#d78eea9a89a46b2d01aa471f64e13ccd61b126e6"
+source = "git+https://github.com/AIWander/cpc-paths?tag=v0.1.0#d78eea9a89a46b2d01aa471f64e13ccd61b126e6"
 dependencies = [
  "anyhow",
  "chrono",
@@ -972,8 +972,8 @@ dependencies = [
  "tracing",
  "tracing-subscriber",
  "uia-mcp",
- "vision-core",
- "windows 0.58.0",
+ "vision-core 0.1.0 (git+https://github.com/AIWander/vision-core?tag=v0.1.0)",
+ "windows 0.62.2",
 ]
 
 [[package]]
@@ -2965,7 +2965,7 @@ checksum = "562d481066bde0658276a35467c4af00bdc6ee726305698a55b86e61d7ad82bb"
 [[package]]
 name = "uia-mcp"
 version = "1.0.0"
-source = "git+https://github.com/josephwander-arch/uia-mcp?tag=v1.0.0#9662d9e74eecf4b3431ca81c91ff565960d6687e"
+source = "git+https://github.com/AIWander/uia-mcp?tag=v1.0.0#9662d9e74eecf4b3431ca81c91ff565960d6687e"
 dependencies = [
  "serde",
  "serde_json",
@@ -3037,6 +3037,22 @@ name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
+
+[[package]]
+name = "vision-core"
+version = "0.1.0"
+source = "git+https://github.com/AIWander/vision-core?tag=v0.1.0#a6e2547199ec8cbbd8b92632198a509daf595b0e"
+dependencies = [
+ "base64 0.22.1",
+ "chrono",
+ "image",
+ "reqwest 0.12.28",
+ "screenshots",
+ "serde",
+ "serde_json",
+ "tokio",
+ "windows 0.58.0",
+]
 
 [[package]]
 name = "vision-core"
@@ -3315,6 +3331,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "windows"
+version = "0.62.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "527fadee13e0c05939a6a05d5bd6eec6cd2e3dbd648b9f8e447c6518133d8580"
+dependencies = [
+ "windows-collections",
+ "windows-core 0.62.2",
+ "windows-future",
+ "windows-numerics",
+]
+
+[[package]]
+name = "windows-collections"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "23b2d95af1a8a14a3c7367e1ed4fc9c20e0a26e79551b1454d72583c97cc6610"
+dependencies = [
+ "windows-core 0.62.2",
+]
+
+[[package]]
 name = "windows-core"
 version = "0.51.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3356,6 +3393,17 @@ dependencies = [
  "windows-link",
  "windows-result 0.4.1",
  "windows-strings 0.5.1",
+]
+
+[[package]]
+name = "windows-future"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1d6f90251fe18a279739e78025bd6ddc52a7e22f921070ccdc67dde84c605cb"
+dependencies = [
+ "windows-core 0.62.2",
+ "windows-link",
+ "windows-threading",
 ]
 
 [[package]]
@@ -3407,6 +3455,16 @@ name = "windows-link"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5"
+
+[[package]]
+name = "windows-numerics"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6e2e40844ac143cdb44aead537bbf727de9b044e107a0f1220392177d15b0f26"
+dependencies = [
+ "windows-core 0.62.2",
+ "windows-link",
+]
 
 [[package]]
 name = "windows-registry"
@@ -3521,6 +3579,15 @@ dependencies = [
  "windows_x86_64_gnu 0.52.6",
  "windows_x86_64_gnullvm 0.52.6",
  "windows_x86_64_msvc 0.52.6",
+]
+
+[[package]]
+name = "windows-threading"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3949bd5b99cafdf1c7ca86b43ca564028dfe27d66958f2470940f73d86d75b37"
+dependencies = [
+ "windows-link",
 ]
 
 [[package]]
